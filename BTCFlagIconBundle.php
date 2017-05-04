@@ -1,6 +1,6 @@
 <?php
 
-namespace ST\FlagIconCssBundle;
+namespace BTC\FlagIconBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
