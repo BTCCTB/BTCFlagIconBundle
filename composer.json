@@ -1,0 +1,21 @@
+{
+  "name": "btc/flagicon-bundle",
+  "type": "library",
+  "description": "CSS for vector based country flags",
+  "license": "proprietary",
+  "authors":[
+    {
+      "name": "Damien LAGAE",
+      "email": "damien.lagae@btcctb.org"
+    }
+  ],
+  "require":     {
+    "symfony/framework-bundle": "~3.1"
+  },
+  "autoload":    {
+    "psr-0": {
+      "BTC\\FlagIconBundle": ""
+    }
+  },
+  "target-dir":  "BTC/FlagIconBundle"
+}
