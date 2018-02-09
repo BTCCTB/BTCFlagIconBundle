@@ -14,12 +14,12 @@
   },
   "autoload":    {
     "psr-4": {
-      "BTC\\FlagIconBundle": ""
+      "BTC\\FlagIconBundle\\": ""
     }
   },
   "extra": {
     "branch-alias": {
-      "dev-master": "1.3-dev"
+      "dev-master": "1.x-dev"
     }
   }
 }
