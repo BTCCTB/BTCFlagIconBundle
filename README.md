@@ -1,4 +1,4 @@
-# Flag-icon Bundle for Symfony
+# Flag-icon Bundle for Symfony 4.0
 
 ## Installation
 
@@ -10,24 +10,21 @@
 {
     "require": {
 		// ...
-        "btc/flagicon-bundle": "~1.0"
+        "btc/flagicon-bundle": "^1.0"
     }
 }
 ```
 
-### Add bundle to your application kernel
+### Add bundle to your application
 
 ``` php
-// app/AppKernel.php
+// config/bundles.php
 
-public function registerBundles()
-{
-    $bundles = array(
-        // ...
-        new BTC\FlagIconBundle\BTCFlagIconBundle(),
-        // ...
-    );
-}
+return [
+    // ...
+    BTC\FlagIconBundle\BTCFlagIconBundle::class => ['all' => true],
+    // ...
+];
 ```
 
 ### Download the bundle using Composer
@@ -38,16 +35,16 @@ $ composer require btc/flagicon-bundle
 
 ### Install assets
 
-Given your server's public directory is named "web", install the public vendor resources
+Given your server's public directory is named "public", install the public vendor resources
 
 ``` bash
-$ php bin/console assets:install web
+$ php bin/console assets:install public
 ```
 
 Optionally, use the --symlink attribute to create links rather than copies of the resources 
 
 ``` bash
-$ php bin/console assets:install --symlink web
+$ php bin/console assets:install --symlink public
 ```
 
 ## Usage
